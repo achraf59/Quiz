@@ -37,6 +37,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         mLancerQuizButton=(Button) findViewById(R.id.LancerQuizbutton);
         mLancerQuizButton.setOnClickListener(this);
 
+        //some changes
+
     }
 
     public void onClick(View view) {
