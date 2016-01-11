@@ -14,7 +14,7 @@ public class QuizActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         final ObjetQuiz quizToLaunch = HelperFileToListQuiz.getQuiz(QuizAplication.getContext(), getIntent().getExtras().getInt("position"));
-        System.out.println("jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj");
+        HelperFileToListQuiz.display(quizToLaunch);
         System.out.println(quizToLaunch.nomQuiz);
         System.out.println(quizToLaunch.dureeQuiz);
 
