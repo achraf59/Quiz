@@ -94,6 +94,11 @@ public class HelperFileToListQuiz {
     return ListObjetQuiz;
     }
 
+    static public ObjetQuiz getQuiz(Context context,int position) {
+
+        return getListOfQuizsFromFile(context).get(position);
+
+    }
 
 
 
