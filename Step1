@@ -1,0 +1,27 @@
+# Quiz
+Projet Quiz
+
+Salut tout le monde , c'est le point de départ de notre projet ,il contient les outils de bases qui vont nous servir pour la suite.
+pour l'instant le Projet contient :
+
+-Un fichier "quiz.txt" dans lequel on va ecrire nos quizs , il faut absolument respecter les délimiteurs avec lequel il est ecrit pour 
+assurer la bonne construction de nos objets à partir de ce fichier.
+
+-Les objets:
+
+ .un objet de type ObjetQuiz qui contient le nom de quiz (String) , la duree de quiz (int) et une liste de 
+  ObjetQuestionPrropositionsReponses (List<ObjetQuestionPrropositionsReponses>)
+
+ Un (ObjetQuestionPrropositionsReponses) à son tour contient une question (String) , une liste de question (List<String>) et une liste 
+ de ses reponses (List<String>)
+
+ helpers:
+ -On a une Classe HelperFileToListOfQuiz : elle lit le contenu du fichier,elle le découpe grace au délimiteurs construit tout les objets ,
+  et elle renvoi à la fin une liste de ObjetQuiz (List<ObjeQuiz>),c'est cette liste qui contient toutes les informations qu'on va 
+  manipuler par la suite
+
+ Activities+ Layouts + adapters: pour l'instant on a un Adapter pour la listView qui affiche la liste de tout les quiz 
+ pour en choisir un , deux Activités , les layouts correspondants ainsi qu'une classe de type application qui retourne 
+ le context qui nous permettera d'acceder aux resources et à la base de donnés
+ 
+ on va rafraichir 
