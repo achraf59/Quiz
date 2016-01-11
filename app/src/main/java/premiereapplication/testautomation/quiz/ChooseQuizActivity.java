@@ -37,6 +37,7 @@ public class ChooseQuizActivity extends Activity implements  AdapterView.OnItemC
     public void onItemClick(AdapterView<?> adapter, View view, int position, long id) {
 
         //final ObjetQuiz quizChoisi = (ObjetQuiz) adapter.getItemAtPosition(position);
+        //commentaire test git
         final int indiceQuizChoisi=position;
         final Intent intent = new Intent(this, QuizActivity.class);
         final Bundle extras = new Bundle();
