@@ -1,11 +1,9 @@
 package premiereapplication.testautomation.quiz.adapters;
 
-import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -62,7 +60,7 @@ public class ListQuizsAdapter extends BaseAdapter {
 
 
         holder.nomQuiz.setText(objetQuiz.nomQuiz);
-        holder.dureeQuiz.setText(objetQuiz.dureeQuiz+" min");
+        holder.dureeQuiz.setText(objetQuiz.dureeQuiz+" sec");
 
 
         return convertView;
@@ -77,8 +75,8 @@ public class ListQuizsAdapter extends BaseAdapter {
 
 
         public ViewHolder(View view){
-            nomQuiz=(TextView) view.findViewById(R.id.nomQuizTextView);
-            dureeQuiz=(TextView) view.findViewById(R.id.dureeQuizTextView);
+            nomQuiz=(TextView) view.findViewById(R.id.nomQuizLaunchedTextView);
+            dureeQuiz=(TextView) view.findViewById(R.id.dureeQuizLaunchedTextView);
             imageQuiz=(ImageView) view.findViewById(R.id.quizImageView);
 
 

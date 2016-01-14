@@ -12,6 +12,7 @@ import java.util.ArrayList;
 
 import premiereapplication.testautomation.quiz.adapters.ListQuizsAdapter;
 import premiereapplication.testautomation.quiz.helpers.HelperFileToListQuiz;
+import premiereapplication.testautomation.quiz.objects.ObjetQuiz;
 
 
 public class ChooseQuizActivity extends Activity implements  AdapterView.OnItemClickListener {
@@ -29,8 +30,6 @@ public class ChooseQuizActivity extends Activity implements  AdapterView.OnItemC
         mListView.setAdapter(tweetsAdapter);
         mListView.setOnItemClickListener(this);
 
-
-
     }
 
     @Override
@@ -41,11 +40,12 @@ public class ChooseQuizActivity extends Activity implements  AdapterView.OnItemC
         final Intent intent = new Intent(this, QuizActivity.class);
         final Bundle extras = new Bundle();
         //extras.putParcelable("QuizToLaunch",quizChoisi);
-        extras.putInt("position", indiceQuizChoisi);
+        extras.putInt("position",indiceQuizChoisi);
         intent.putExtras(extras);
         startActivity(intent);
 
     }
+
 
 
 }

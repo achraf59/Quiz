@@ -20,6 +20,7 @@ public List<QuestionPropositionsReponses> listQuestionPropositionsReponses;
     this.listQuestionPropositionsReponses=listQuestionPropositionsReponses;
     }
 
+
     @Override
     public int describeContents() {
         return 0;
@@ -48,15 +49,4 @@ public List<QuestionPropositionsReponses> listQuestionPropositionsReponses;
             return new ObjetQuiz[size];
         }
     };
-
-
-
-
-
-
-
-
-
-
-
 }

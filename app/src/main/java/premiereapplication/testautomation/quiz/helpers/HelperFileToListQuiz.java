@@ -48,7 +48,7 @@ public class HelperFileToListQuiz {
 
     static public List<ObjetQuiz> getListOfQuizsFromFile(Context context) {
 
-        String ContenuFichierEntier = readFile(context);
+        String ContenuFichierEntier = readFile(context);  //lire le contenu de fichier et le mettre dans un string ContenuFichierEntier
 
 
         List<ObjetQuiz> ListObjetQuiz = new ArrayList<ObjetQuiz>();
@@ -94,11 +94,14 @@ public class HelperFileToListQuiz {
     return ListObjetQuiz;
     }
 
+
+
     static public ObjetQuiz getQuiz(Context context,int position) {
 
         return getListOfQuizsFromFile(context).get(position);
 
     }
+
 
 
 
@@ -135,39 +138,41 @@ public class HelperFileToListQuiz {
         }
 
     }
+
     static public void display(ObjetQuiz Quiz) {
 
 
 
 
-        String nomQuiz = Quiz.nomQuiz;
-        int dureeQuiz = Quiz.dureeQuiz;
-        List<QuestionPropositionsReponses> listQuestionPropositionsReponses = Quiz.listQuestionPropositionsReponses;
+            String nomQuiz = Quiz.nomQuiz;
+            int dureeQuiz = Quiz.dureeQuiz;
+            List<QuestionPropositionsReponses> listQuestionPropositionsReponses = Quiz.listQuestionPropositionsReponses;
 
-        System.out.println("Nom du Quiz :" + nomQuiz);
-        System.out.println("Duree du Quiz :" + dureeQuiz + "\n");
+            System.out.println("Nom du Quiz :" + nomQuiz);
+            System.out.println("Duree du Quiz :" + dureeQuiz + "\n");
 
 
-        for (int j = 0; j < listQuestionPropositionsReponses.size(); j++) {
-            String enonceQuestion = listQuestionPropositionsReponses.get(j).question;
-            List<String> listPropositions = listQuestionPropositionsReponses.get(j).propositions; //changer nom en list propo
-            List<String> listReponses = listQuestionPropositionsReponses.get(j).reponses;//changer en liste rep
+            for (int j = 0; j < listQuestionPropositionsReponses.size(); j++) {
+                String enonceQuestion = listQuestionPropositionsReponses.get(j).question;
+                List<String> listPropositions = listQuestionPropositionsReponses.get(j).propositions; //changer nom en list propo
+                List<String> listReponses = listQuestionPropositionsReponses.get(j).reponses;//changer en liste rep
 
-            System.out.println("question " + (j + 1) + " : " + enonceQuestion);
-            System.out.println("Propositions :");
-            for (int k = 0; k < listPropositions.size(); k++) {
-                System.out.println(listPropositions.get(k));
-            }
-            System.out.println("Reponses :");
-            System.out.println();
-            for (int k = 0; k < listReponses.size(); k++) {
-                System.out.println(listReponses.get(k));
+                System.out.println("question " + (j + 1) + " : " + enonceQuestion);
+                System.out.println("Propositions :");
+                for (int k = 0; k < listPropositions.size(); k++) {
+                    System.out.println(listPropositions.get(k));
+                }
+                System.out.println("Reponses :");
+                System.out.println();
+                for (int k = 0; k < listReponses.size(); k++) {
+                    System.out.println(listReponses.get(k));
+                }
             }
         }
-    }
 
 
 }
+
 
 
 

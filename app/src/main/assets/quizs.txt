@@ -1,8 +1,19 @@
-Sport//
-15//
-le club le plus populaire ? <JSK,MCA/MCA>
-les champions d 'afrique? <JSK,MCA,Usma/JSK,MCA>
+Capitals//
+30//
+Capital Algerie ? <Oran,Alger,Annaba/Alger>
+Capital Maroc ? <Rabat,Casablanca,Marakech,Fes/Rabat>
+Capital Tunisie ? <Sousse,Tunis,Hamamet/Tunis>
+Capital Espagne ? <Barcelone,Madrid,Malaga/Madrid>
+Capital Brésil ? <Rio,Brazilia,Sao Paulo/Brazilia>
 
+
+Quiz
+Voitures//
+15//
+marque allemande ? <mercedes,renault/mercedes>
+marque americaine ?<opel,renault,audi,ford/ford>
+marque Francaise ?<opel,renault,fiat/renault>
+marque Japonaise ?<opel,toyota,fiat/toyota>
 
 Quiz
 Geographie//
@@ -10,16 +21,7 @@ Geographie//
 pays riche ? <USA,France/USA>
 pays paauvre ?<Senegal,Nigeria/Senegal>
 
-Quiz
-Capital//
-10//
-Capital Algerie ? <Paris,Alger/Alger>
 
-Quiz
-Voiture//
-15//
-marque allemande ? <mercedes,renault,wolsvagen/mercedes,wolsvagen>
-marque americaine ?<opel,renault,peoget,audi,ford/ford>
 
 Quiz
 Culture Generale//
@@ -71,3 +73,9 @@ Quiz
 Langue//
 15//
 vide<,/,>
+
+
+Quiz
+android//
+50//
+monaie europ<euro,dolars,yen/euros>
